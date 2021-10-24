@@ -8,9 +8,14 @@
 
   @include clearfix;
 
-  [class^="col-"] {
-    float: left;
 
+
+  [class^="col-"] {
+    // select all element with this attribute
+    // ^ = Start with
+    // * = End
+    // $ = End
+    float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
